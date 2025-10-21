@@ -181,7 +181,7 @@ const OrderSummary = ({ totalPrice, items }) => {
           className="accent-gray-500"
         />
         <label htmlFor="RAZORPAY" className="cursor-pointer">
-          Razorpay Payment
+          Razorpay 
         </label>
       </div>
 
@@ -248,7 +248,7 @@ const OrderSummary = ({ totalPrice, items }) => {
         onClick={(e) => toast.promise(handlePlaceOrder(e), { loading: 'Placing Order...' })}
         className="w-full bg-slate-700 text-white py-2.5 rounded hover:bg-slate-900 active:scale-95 transition-all"
       >
-        Submit for Approval
+        🛒 Place Order
       </button>
 
       {showAddressModal && <AddressModal setShowAddressModal={setShowAddressModal} />}
